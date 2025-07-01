@@ -1,6 +1,9 @@
 CREATE INDEX idx_user_email ON User(email);
 CREATE INDEX idx_user_username ON User(username);
 
+EXPLAIN idx_user_username
+ANALYZE idx_user_username
+
 CREATE INDEX idx_booking_user_id ON Booking(user_id);
 CREATE INDEX idx_booking_property_id ON Booking(property_id);
 CREATE INDEX idx_booking_booking_date ON Booking(booking_date);
