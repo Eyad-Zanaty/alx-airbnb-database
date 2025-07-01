@@ -1,0 +1,1 @@
+select * from Booking where  start_date > '2024-01-01';
